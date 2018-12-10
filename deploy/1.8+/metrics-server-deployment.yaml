@@ -34,4 +34,5 @@ spec:
         volumeMounts:
         - name: tmp-dir
           mountPath: /tmp
+        command: ["/metrics-server", "--kubelet-preferred-address-types=InternalIP", "--kubelet-insecure-tls"]
 
